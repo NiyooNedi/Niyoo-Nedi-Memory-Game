@@ -5,15 +5,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Finalist Task</title>
-  <!-- Links our CSS code to our HTML code -->
+  <!-- Links our CSS code to HTML code -->
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <h1>Hello world</h1>
+  <h1>Light and Sound Game</h1>
+  
+  <p>Welcome to the Light and Sound Game! To play this game, click start, and mimic the patterns that are displayed on your screen!</p>
 
+  <button id = "startButton", onclick="startGame()"> Start </button>
+  <button id = "stopButton", class = "hidden", onclick="stopGame()"> End </button>
 
-  <!-- Links our JavaScript code to our HTML code -->
+<div id = gameButtonArea>
+
+  <button id = "firstButton", onmousedown="startTone(1)" onmouseup="stopTone()", onclick = guess(1)></button>
+  <button id = "secButton", onmousedown="startTone(2)" onmouseup="stopTone()", onclick = guess(2)></button>
+  <button id = "thirdButton", onmousedown="startTone(3)" onmouseup="stopTone()", onclick = guess(3)></button>
+  <button id = "fourthButton", onmousedown="startTone(4)" onmouseup="stopTone()", onclick = guess(4)></button>
+  
+</div>
+
+  <!-- Links JavaScript code to HTML code -->
   <script src="script.js"></script>
 </script>
 </body>
