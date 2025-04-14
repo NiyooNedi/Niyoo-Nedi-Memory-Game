@@ -1,4 +1,73 @@
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
+  
+  background-color: #ACC8E5;
+  color: #030F1D
+}
+
+h1 {
+
+  font-family: verdana, arial, sans-serif;
+  font-style: oblique;
+
+  color: rebeccapurple;
+}
+
+button {
+
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#gameButtonArea > button {
+
+  height: 200px;
+  width: 200px;
+  margin: 2px;
+}
+
+.hidden {
+
+  display: none;
+}
+
+#firstButton {
+
+  background: lightgreen;
+}
+
+#secButton {
+
+  background: lightblue;
+}
+
+#thirdButton {
+
+  background: pink;
+}
+
+#fourthButton {
+
+  background: lightyellow;
+}
+
+#firstButton:active, #firstButton.lit {
+  
+  background: green;
+}
+
+#secButton:active, #secButton.lit {
+
+  background: blue;
+}
+
+#thirdButton:active, #thirdButton.lit {
+
+  background: red;
+}
+
+#fourthButton:active, #fourthButton.lit {
+
+  background: yellow;
 }
